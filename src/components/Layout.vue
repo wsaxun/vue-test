@@ -30,5 +30,6 @@ export default {
 @import url('../assets/less/util');
   div {
     .divBackGroupColor(rgb(235, 238, 243));
+    width: 1520px;
   }
 </style>

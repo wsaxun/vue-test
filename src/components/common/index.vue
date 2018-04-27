@@ -53,12 +53,11 @@ export default {
 @import url('../../assets/less/util');
     .content {
       position: relative;
-      margin-left: @space;
-      margin-right: @space;
-      padding-top: 100px; 
+      padding-top: 100px;
       .clearFloat();
       .nav {
         float: left;
+        margin-left: @space;
         h2 {
           .divBackGroupColor(#74C284);
           color: #ffffff;
@@ -94,6 +93,8 @@ export default {
       }
       .main {
         float: right;
+        position: relative;
+        margin-right: @space;
         .main-top {
           height: 450px;
           .divBackGroupColor();
@@ -104,44 +105,41 @@ export default {
         }
         .main-bottom {
           margin-top: 20px;
-          height: 100%;
-          width: 820px;
           .divBackGroupColor(rgb(235, 238, 243));
           .utils {
-              .row {
-                display: table-row;
-                .module{
-                    width: 420px;
-                    display: table-cell;
-                    padding: 14px;
-                    position: relative;
-                    .divBackGroupColor(#ffffff);
-                    h2 {
-                        padding-left: 100px;
-                    }
-                    p {
-                        padding-left: 100px;
-                    }
-                    div {
-                        // position: relative;
-                        div {
-                          background: url(../../assets/img/img1.png);
-                          width: 100px;
-                          height: 100px;
-                        }
-                        a {
-                            display: inline-block;
-                            position: absolute;
-                            left: 100px;
-                            bottom:0;
-                            background-color:green;
-                            padding: 10px 20px 10px 20px;
-                            color: #ffffff;
-                        }
-                    }
-                 }
-              }
-
+            height: 500px;
+            .row {
+              display: table-row;
+              .module{
+                  width: 420px;
+                  display: table-cell;
+                  padding: 14px;
+                  position: relative;
+                  .divBackGroupColor(#ffffff);
+                  h2 {
+                      padding-left: 100px;
+                  }
+                  p {
+                      padding-left: 100px;
+                  }
+                  div {
+                      div {
+                        background: url(../../assets/img/img1.png);
+                        width: 100px;
+                        height: 100px;
+                      }
+                      a {
+                          display: inline-block;
+                          position: absolute;
+                          left: 100px;
+                          bottom:0;
+                          background-color:green;
+                          padding: 10px 20px 10px 20px;
+                          color: #ffffff;
+                      }
+                  }
+                }
+            }
           }            
         }
       }

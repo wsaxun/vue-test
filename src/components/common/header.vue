@@ -26,28 +26,28 @@ export default {
     z-index: 100;
     .clearFloat();
     a{
-    display: block;
-    float: left;
-    margin-left: @space;
-    .blockmidden();
-    img {
-        height: 50px;
-        width: 50px;
-    }
-    }
-    div {
-    float: right;
-    position: relative;
-    margin-right: @space;
-    top: 35%;
-    ul {
-        .divBackGroupColor(#363636);
-        li {
-        display: inline-block;
-        margin-left: 8px;
-        color: #B2B2B2;
+        display: block;
+        float: left;
+        margin-left: @space;
+        .blockmidden();
+        img {
+            height: 50px;
+            width: 50px;
         }
     }
+    div {
+        float: right;
+        position: relative;
+        margin-right: @space;
+        top: 35%;
+        ul {
+            .divBackGroupColor(#363636);
+            li {
+            display: inline-block;
+            margin-left: 8px;
+            color: #B2B2B2;
+            }
+        }
     }
 }
 </style>
