@@ -1,0 +1,48 @@
+// css 基本样式utils
+
+// ul 样式
+.myul(@size:13px, @weight:400, @pd-top:8px, @pd-b:10px, @pd-l:15px) {
+    font-size: @size;
+    font-weight: @weight;
+    padding-top: @pd-top;
+    padding-bottom: @pd-b;
+    padding-left: @pd-l;
+};
+
+// 消除浮动  (此时.clearFloat可以当初标签的一个类名，@import引入之后，会在网页的head标签内建立style内容为
+//          .clearFloat的css样式, 所以可以在template中使用属性来引用它，“div.clearFloat” 或者在less样式中
+//          使用".clearFloat()"  或者 ".clearFloat" 来引用）
+//
+.clearFloat() {
+    zoom: 1;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+}
+
+// 背景色
+.divBackGroupColor(@color: #ffffff) {
+    background-color: @color;
+}
+
+// 块元素垂直居中
+.blockmidden() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+//元素间隔
+@space: 150px;
+
+// 标题元素
+.coustomh(@size: 13px, @weight:700, @ptb:10px, @pl:10px){
+    font-size: @size;
+    font-weight: @weight;
+    padding-top: @ptb;
+    padding-bottom: @ptb;
+    padding-left: @pl;
+}
+
