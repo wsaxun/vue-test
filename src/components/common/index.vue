@@ -22,13 +22,12 @@
         div.main-bottom 
             div.utils
               template(v-for="(item, index) in modulesl.items")
-                div.row
-                  div.module
-                    h2 {{ item.name }}
-                    p {{ item.description }}
-                    div
-                      div(:class="['divBackUrl' + index ]")
-                      a(:href="item.url") 立刻购买
+                div.module
+                  h2 {{ item.name }}
+                  p {{ item.description }}
+                  div
+                    div(:class="['divBackUrl' + index ]")
+                    a(:href="item.url") 立刻购买
 </template>
 
 <script>
@@ -107,38 +106,35 @@ export default {
           margin-top: 20px;
           .divBackGroupColor(rgb(235, 238, 243));
           .utils {
-            height: 500px;
-            .row {
-              display: table-row;
-              .module{
-                  width: 420px;
-                  display: table-cell;
-                  padding: 14px;
-                  position: relative;
-                  .divBackGroupColor(#ffffff);
-                  h2 {
-                      padding-left: 100px;
-                  }
-                  p {
-                      padding-left: 100px;
-                  }
-                  div {
-                      div {
-                        background: url(../../assets/img/img1.png);
-                        width: 100px;
-                        height: 100px;
-                      }
-                      a {
-                          display: inline-block;
-                          position: absolute;
-                          left: 100px;
-                          bottom:0;
-                          background-color:green;
-                          padding: 10px 20px 10px 20px;
-                          color: #ffffff;
-                      }
-                  }
+            width: 800px;
+            .module{
+              width: 350px;
+              display: inline-block;
+              padding: 14px;
+              position: relative;
+              .divBackGroupColor(#ffffff);
+              h2 {
+                padding-left: 100px;
+              }
+              p {
+                padding-left: 100px;
+              }
+              div {
+                div {
+                  background: url(../../assets/img/img1.png);
+                  width: 100px;
+                  height: 100px;
                 }
+                a {
+                  display: block;
+                  position: absolute;
+                  left: 120px;
+                  bottom: 40px;
+                  background-color:green;
+                  padding: 10px 20px 10px 20px;
+                  color: #ffffff;
+                }
+              }
             }
           }            
         }
